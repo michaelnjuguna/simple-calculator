@@ -1,0 +1,83 @@
+//remove all browser defaults
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //main container for calculator
+  //occupy entire viewport width
+  html {
+    font-size: 62.5%;
+  }
+  .main {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 9%);
+    padding: 5%;
+    //calculator
+    .calculator {
+      width: 50%;
+      min-height: 80vh;
+      padding: 2rem;
+      background-color: hsl(0, 0%, 3%);
+      //to center the calculator
+      margin: 0 auto;
+      border-radius: 8px;
+      //input box
+      .content {
+        width: 100%;
+        min-height: 5rem;
+        border: solid hsl(0, 6%, 85%) 3px;
+        border-radius: 8px;
+        font-size: 1.6rem;
+        color: hsl(0, 6%, 85%);
+        padding-top: 1rem;
+        padding-left: 1rem;
+        overflow: hidden;
+      }
+      //signs
+      .container {
+        position: relative;
+        .num-btn {
+          font-size: 1.6rem;
+          color: hsl(0, 6%, 85%);
+          width: 24%;
+          display: inline-block;
+          text-align: center;
+          height: 3rem;
+          border: solid hsl(0, 6%, 85%) 3px;
+          border-radius: 8px;
+          margin-top: 1rem;
+          margin-left: 0.5%;
+          background-color: transparent;
+        }
+        //unique buttons
+        .divide {
+          margin-left: 50%;
+        }
+        .equals {
+          margin-left: 25%;
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+          position: absolute;
+          right: -0.1%;
+        }
+      }
+      //container responsive
+    }
+    @media (max-width: 1276px) {
+      .calculator {
+        width: 80%;
+        .container {
+          .num-btn {
+            width: 20%;
+          }
+          .equals {
+            height: 3rem;
+            width: 3rem;
+          }
+        }
+      }
+    }
+  }
+}

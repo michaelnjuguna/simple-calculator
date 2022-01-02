@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="simple calculator by mike" />
+    <!--CSS stylesheets-->
+    <link rel="stylesheet" href="index.css" />
+    <!--favicon-->
+    <link rel="shortcut icon" href="photos/favicon.png" type="image/png" />
+    <title>Simple calculator</title>
+  </head>
+  <body>
+    <!--container for calculator-->
+    <section class="main">
+      <!--calculator-->
+      <div class="calculator">
+        <!--input box-->
+        <p class="content"></p>
+        <!--numbers and signs-->
+        <div class="container">
+          <button class="num-btn ac" onclick="removeContent();">AC</button>
+          <button onclick="divide();" class="num-btn divide">/</button>
+          <button onclick="addSeven();" class="num-btn seven">7</button>
+          <button onclick="addEight();" class="num-btn eight">8</button>
+          <button onclick="addNine();" class="num-btn nine">9</button>
+          <button onclick="multiply();" class="num-btn multiply">X</button>
+          <button onclick="addFour();" class="num-btn four">4</button>
+          <button onclick="addFive();" class="num-btn five">5</button>
+          <button onclick="addSix();" class="num-btn six">6</button>
+          <button onclick="minus();" class="num-btn minus">-</button>
+          <button onclick="addOne();" class="num-btn one">1</button>
+          <button onclick="addTwo();" class="num-btn two">2</button>
+          <button onclick="addThree();" class="num-btn three">3</button>
+          <button onclick="addition();" class="num-btn plus">+</button>
+          <button onclick="addZero();" class="num-btn zero">0</button>
+          <button onclick="addDecimal();" class="num-btn decimal">.</button>
+          <button onclick="compute();" class="num-btn equals">=</button>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
